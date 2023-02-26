@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "yuapi.client",
+      "type": "com.kevin.kevinapiclientsdk.KevinApiClientConfig",
+      "sourceType": "com.kevin.kevinapiclientsdk.KevinApiClientConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "yuapi.client.access-key",
+      "type": "java.lang.String",
+      "sourceType": "com.kevin.kevinapiclientsdk.KevinApiClientConfig"
+    },
+    {
+      "name": "yuapi.client.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.kevin.kevinapiclientsdk.KevinApiClientConfig"
+    }
+  ],
+  "hints": []
+}

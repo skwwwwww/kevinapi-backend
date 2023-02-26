@@ -1,0 +1,9 @@
+com\kevin\kevinapicommon\model\enums\InterfaceInfoStatusEnum.class
+com\kevin\kevinapicommon\model\entity\User.class
+com\kevin\kevinapicommon\model\entity\InterfaceInfo.class
+com\kevin\kevinapicommon\model\entity\UserInterfaceInfo.class
+com\kevin\kevinapicommon\service\InnerInterfaceInfoService.class
+com\kevin\kevinapicommon\service\InnerUserInterfaceInfoService.class
+com\kevin\kevinapicommon\service\InnerUserService.class
+com\kevin\kevinapicommon\model\vo\UserVO.class
+com\kevin\kevinapicommon\model\vo\InterfaceInfoVO.class
