@@ -1,6 +1,7 @@
 package com.kevin.kevinapiclientsdk.client;
 
 
+import cn.hutool.core.lang.UUID;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import cn.hutool.http.HttpUtil;
@@ -10,7 +11,6 @@ import com.kevin.kevinapiclientsdk.utils.SignUtils;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 
 /**
  * @Projectname: kevinapi-backend
@@ -21,7 +21,7 @@ import java.util.UUID;
 
 public class KevinApiClient {
 	//网关地址
-	public static final String GATEWAY_HOST = "http://localhost:8090";
+	public static final String GATEWAY_HOST = "http://101.43.207.192:8090";
 
 	//AK/SK
 	private String accessKey;
@@ -63,6 +63,8 @@ public class KevinApiClient {
 
 		//放入随机数
 		String nonce = UUID.randomUUID().toString();
+		//String nonce = "skw";
+
 		header.put("nonce", nonce.toString());
 		//body, 用于在网关生成签名
 		header.put("body", body);

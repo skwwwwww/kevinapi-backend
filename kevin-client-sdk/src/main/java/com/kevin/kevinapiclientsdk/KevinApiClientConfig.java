@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * @Author: skw
  */
 @Configuration
-@ConfigurationProperties("yuapi.client")
+@ConfigurationProperties("kevin.client")
 @Data
 @ComponentScan
 public class KevinApiClientConfig {
@@ -22,7 +22,7 @@ public class KevinApiClientConfig {
 	private String secretKey;
 
 	@Bean
-	public KevinApiClient yuApiClient() {
+	public KevinApiClient kevinApiClientApiClient() {
 		return new KevinApiClient(accessKey, secretKey);
 	}
 }

@@ -56,3 +56,19 @@ create table if not exists user
         unique (userAccount)
 ) comment '用户';
 
+-- 创建接口库
+create database if not exists interface;
+
+use interface;
+
+drop table joke;
+
+-- 笑话
+create table if not exists interface.`joke`
+(
+`jokeId` int not null auto_increment comment '笑话id' primary key,
+`jokeData` text not null comment '笑话内容',
+`createTime` timestamp default CURRENT_TIMESTAMP not null comment '创建时间',
+`updataTime` timestamp default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
+`isDelete` tinyint default 0 not null comment '是否删除(0-未删, 1-已删)'
+) comment '笑话';

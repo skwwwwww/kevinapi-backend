@@ -26,4 +26,6 @@ public class InnerUserServiceImpl implements InnerUserService {
         queryWrapper.eq("accessKey", accessKey);
         return userMapper.selectOne(queryWrapper);
     }
+
+
 }

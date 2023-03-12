@@ -19,6 +19,13 @@
         <spring-cloud.version>2021.0.5</spring-cloud.version>
     </properties>
     <dependencies>
+        <!--jedis 用来将随机数存在redis中-->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
         <dependency>
             <groupId>com.kevin</groupId>
             <artifactId>kevinapi-common</artifactId>

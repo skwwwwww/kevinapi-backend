@@ -1,5 +1,7 @@
 package com.kevin.kevinapicommon.service;
 
+import com.kevin.kevinapicommon.model.entity.UserInterfaceInfo;
+
 /**
  *
  */
@@ -12,4 +14,6 @@ public interface InnerUserInterfaceInfoService {
      * @return
      */
     boolean invokeCount(long interfaceInfoId, long userId);
+
+    UserInterfaceInfo getUserInterfaceInfo(String interfaceInfoId, String userId);
 }

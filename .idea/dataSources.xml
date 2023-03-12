@@ -7,5 +7,17 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/kevin</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="kevin腾讯云数据库" uuid="032a7830-d8b8-4a96-a8fa-dcb2d4072b8a">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://101.43.207.192:3306/kevin</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="interface腾讯云数据库" uuid="33782695-df70-42fa-b805-4ea374b20290">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://101.43.207.192:3306/interface</jdbc-url>
+    </data-source>
   </component>
 </project>

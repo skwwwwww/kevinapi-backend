@@ -1,9 +1,6 @@
 package com.kevin.kevinapicommon.model.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -36,6 +33,11 @@ public class InterfaceInfo implements Serializable {
      * 接口地址
      */
     private String url;
+
+    /**
+     * 请求参数
+     */
+    private String requestParams;
 
     /**
      * 请求头
@@ -75,6 +77,7 @@ public class InterfaceInfo implements Serializable {
     /**
      * 是否删除(0-未删, 1-已删)
      */
+    @TableLogic
     private Integer isDelete;
 
     @TableField(exist = false)
@@ -96,6 +99,7 @@ public class InterfaceInfo implements Serializable {
             && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
             && (this.getDescription() == null ? other.getDescription() == null : this.getDescription().equals(other.getDescription()))
             && (this.getUrl() == null ? other.getUrl() == null : this.getUrl().equals(other.getUrl()))
+            && (this.getRequestParams() == null ? other.getRequestParams() == null : this.getRequestParams().equals(other.getRequestParams()))
             && (this.getRequestHeader() == null ? other.getRequestHeader() == null : this.getRequestHeader().equals(other.getRequestHeader()))
             && (this.getResponseHeader() == null ? other.getResponseHeader() == null : this.getResponseHeader().equals(other.getResponseHeader()))
             && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
@@ -114,6 +118,7 @@ public class InterfaceInfo implements Serializable {
         result = prime * result + ((getName() == null) ? 0 : getName().hashCode());
         result = prime * result + ((getDescription() == null) ? 0 : getDescription().hashCode());
         result = prime * result + ((getUrl() == null) ? 0 : getUrl().hashCode());
+        result = prime * result + ((getRequestParams() == null) ? 0 : getRequestParams().hashCode());
         result = prime * result + ((getRequestHeader() == null) ? 0 : getRequestHeader().hashCode());
         result = prime * result + ((getResponseHeader() == null) ? 0 : getResponseHeader().hashCode());
         result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
@@ -135,6 +140,7 @@ public class InterfaceInfo implements Serializable {
         sb.append(", name=").append(name);
         sb.append(", description=").append(description);
         sb.append(", url=").append(url);
+        sb.append(", requestParams=").append(requestParams);
         sb.append(", requestHeader=").append(requestHeader);
         sb.append(", responseHeader=").append(responseHeader);
         sb.append(", userId=").append(userId);

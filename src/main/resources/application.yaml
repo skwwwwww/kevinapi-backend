@@ -20,6 +20,7 @@ spring:
     port: 6379
     host: 192.168.200.130
     database: 0
+    password: 123456
   cloud:
     nacos:
       #     注册中心 也就是连接到哪个nacos上

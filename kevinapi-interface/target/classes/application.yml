@@ -9,6 +9,6 @@ kevinapi:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/kevin
+    url: jdbc:mysql://localhost:3306/interface?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
     username: root
     password: root
