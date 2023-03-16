@@ -56,7 +56,7 @@ public class CustomGlobalFilter implements GlobalFilter, Ordered {
     private InnerUserInterfaceInfoService innerUserInterfaceInfoService;
 
     /**
-     * 白名单还不太清楚具体有什么用
+     * 控制访问白名单
      */
     private static final List<String> IP_WHITE_LIST = Arrays.asList("127.0.0.1");
 
